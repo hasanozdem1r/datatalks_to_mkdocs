@@ -4,7 +4,7 @@ import pandas as pd
 def json_to_df(json_data) -> pd.DataFrame:
     message_data = []
     messages = json_data.get("messages")
-    if len(json_data.get("messages")) > 0:
+    if len(messages) > 0:
         for message in messages:
             user = message.get("user")
             message_type = message.get("type")
