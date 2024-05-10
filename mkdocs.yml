@@ -1,0 +1,31 @@
+# Project information
+site_name: DataTalks.Club Jobs Posting
+site_url: datatalks-to-mkdocs.readthedocs.io
+site_author: Hasan Ozdemir
+site_description: ""
+
+# Repository
+repo_url: https://github.com/hasanozdem1r/datatalks_to_mkdocs
+
+# Copyright
+copyright: "datatalks-to-mkdocs is licensed under the <a href='https://github.com/hasanozdem1r/datatalks_to_mkdocs/blob/main/LICENSE'>Apache License 2.0</a>"
+
+
+theme:
+  name: null
+  disable_nav_previous_next: true
+  # Turn off the footer entirely
+  disable_footer: true
+  custom_dir: 'cinder'
+  # snytax highlighting
+  colorscheme: dracula
+
+nav:
+    - HOME: index.md
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+  collapse_toc: false
