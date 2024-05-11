@@ -12,11 +12,10 @@ copyright: "datatalks-to-mkdocs is licensed under the <a href='https://github.co
 
 
 theme:
-  name: null
+  name: material
   disable_nav_previous_next: true
   # Turn off the footer entirely
   disable_footer: true
-  custom_dir: 'cinder'
   # snytax highlighting
   colorscheme: dracula
 
