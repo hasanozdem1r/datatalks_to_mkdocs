@@ -1,6 +1,5 @@
 import aiohttp
 from slack_jobs.core import send_async_get_request, send_async_post_request
-from slack_jobs.config import CHANNEL_ID, SLACK_BOT_TOKEN
 import json
 
 
