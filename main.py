@@ -15,6 +15,7 @@ async def main():
     rv = await get_conversation_history(
         channel_id=CHANNEL_ID, bearer_token=SLACK_BOT_TOKEN
     )
+    print(rv)
     df = json_to_df(rv)
     df["url"] = df["slack_message"].apply(get_job_url)
     final_message = prepare_slack_message(df=df)
