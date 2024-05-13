@@ -12,6 +12,7 @@ CWD = os.getcwd()
 
 
 async def main():
+    print(CHANNEL_ID,SLACK_BOT_TOKEN)
     rv = await get_conversation_history(
         channel_id=CHANNEL_ID, bearer_token=SLACK_BOT_TOKEN
     )
