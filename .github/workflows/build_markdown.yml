@@ -24,10 +24,10 @@ jobs:
           python -m pip install --upgrade pip  # Example for Python dependencies
           pip install -r requirements.txt  # Install from a requirements file
 
-      - name: Run 
-        run: echo $SLACK_CHANNEL_ID
-
       - name: Run code to generate markdown file
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
         run: python main.py
         
 
