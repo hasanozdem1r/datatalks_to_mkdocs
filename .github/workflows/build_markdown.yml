@@ -36,4 +36,4 @@ jobs:
           commit_message: Update CSV file
           commit_user_name: GitHub Actions
           commit_user_email: actions@github.com 
-          branch: master
+          branch: main # reference to main
