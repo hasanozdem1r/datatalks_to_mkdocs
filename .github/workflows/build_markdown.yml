@@ -3,7 +3,7 @@ name: Update Markdown File  # Give your workflow a clear name
 on:
   push:  # Run on every push to a specific branch or branches
     branches:
-      - master  # Replace with your desired branch(es)
+      - main 
   # Or consider a schedule:
   schedule:
     - cron: "0 0 * * *"  # Run daily at midnight
