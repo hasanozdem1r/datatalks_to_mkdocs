@@ -15,6 +15,14 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
 
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+              
       - name: Install dependencies (if needed)
         run: |
           python -m pip install --upgrade pip  # for Python dependencies
